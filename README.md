@@ -162,6 +162,10 @@ This project is designed to evolve toward:
 
 financial-rag/
 │
+
+
+
+
 ├── data/
 ├── ingestion/
 ├── embeddings/
