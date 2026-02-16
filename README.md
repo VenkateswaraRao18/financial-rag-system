@@ -161,17 +161,19 @@ This project is designed to evolve toward:
 ## 📂 Project Structure
 
 financial-rag/
-│
-
-
-
 
 ├── data/
+
 ├── ingestion/
+
 ├── embeddings/
+
 ├── retrieval/
+
 ├── generation/
+
 ├── app.py
+
 └── README.md
 
 ---
