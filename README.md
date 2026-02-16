@@ -21,19 +21,19 @@ Build a production-style RAG pipeline capable of:
 ## 🏗 System Architecture
 
 Financial PDFs (10-K Reports)
-↓
+→
 PDF Loader (PyPDF)
-↓
+→
 Sliding Window Chunking
-↓
+→
 SentenceTransformers Embeddings (MiniLM)
-↓
+→
 FAISS Vector Index (Dense Retrieval)
-↓
+→
 Top-K Relevant Chunks
-↓
+→
 Gemini LLM (Context-Grounded Generation)
-↓
+→
 Final Answer
 
 ---
