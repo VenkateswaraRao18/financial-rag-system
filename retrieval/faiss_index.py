@@ -1,5 +1,6 @@
 import faiss
 import numpy as np
+import os
 
 
 class FaissIndex:
@@ -14,3 +15,12 @@ class FaissIndex:
             np.array([query_embedding]), k
         )
         return distances, indices
+
+    def save(self, path="faiss_index.bin"):
+        faiss.write_index(self.index, path)
+
+    def load(self, path="faiss_index.bin"):
+        if os.path.exists(path):
+            self.index = faiss.read_index(path)
+            return True
+        return False
